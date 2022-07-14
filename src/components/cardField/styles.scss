@@ -1,0 +1,25 @@
+@import "../../styles/variables/fonts";
+@import "../../styles/variables/spacing";
+@import "../../styles/variables/colors";
+
+.rick-morty-card-field {
+  &__label {
+    margin-top: $space-normal;
+    font-size: $font-sm;
+  }
+
+  &__value {
+    font-size: $font-normal;
+    font-weight: $bold;
+
+    &--invert:hover {
+      cursor: pointer;
+      color: $secondary-accent;
+    }
+
+    &--none:hover {
+      cursor: unset;
+      color: white;
+    }
+  }
+}

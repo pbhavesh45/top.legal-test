@@ -1,0 +1,36 @@
+@import "../../styles/variables/miscs";
+@import "../../styles/variables/spacing";
+@import "../../styles/variables/fonts";
+
+.rick-morty-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  background-color: black;
+  padding: $space-normal;
+  color: white;
+  width: 80%;
+
+  img {
+    width: auto;
+    height: 50px;
+  }
+
+  &__source-code {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    font-size: $font-ml;
+    margin-left: $space-small;
+  }
+}
